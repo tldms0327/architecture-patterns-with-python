@@ -3,3 +3,7 @@
 
 # Cache
 __pycache__
+.mypy_cache
+
+# Package
+.venv
