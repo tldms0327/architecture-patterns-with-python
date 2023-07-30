@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "chapter00"
+version = "1"
+description = "파이썬으로 살펴보는 아키텍처 패턴 책 Chapter 0 도입"
+authors = ["Taehyun Lee <0417taehyun@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+fastapi = "^0.100.1"
+uvicorn = "^0.23.1"
+pydantic-settings = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

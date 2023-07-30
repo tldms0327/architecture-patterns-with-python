@@ -1,20 +1,13 @@
 [tool.poetry]
 name = "architecture-patterns-with-python"
 version = "1"
-description = "Architecture Patterns with Python"
+description = "파이썬으로 살펴보는 아키텍처 패턴 책 공부 소스 코드"
 authors = ["Taehyun Lee <0417taehyun@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "architecture_patterns_with_python"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-
-[tool.poetry.group.test.dependencies]
-pytest = "^7.3.1"
-
-
-[tool.poetry.group.linter.dependencies]
+python = "^3.11"
 pre-commit = "^3.3.2"
 isort = "^5.12.0"
 black = "^23.3.0"
@@ -22,18 +15,17 @@ mypy = "^1.3.0"
 
 [tool.black]
 line-length = 120
-target-version = ["py39"]
+target-version = ["py311"]
 
 [tool.isort]
-py_version = 39
+py_version = 311
 skip = ["__init__.py"]
 multi_line_output = 3
 include_trailing_comma = true
 profile = "black"
 
 [tool.mypy]
-python_version = "3.9"
-
+python_version = "3.11"
 
 [build-system]
 requires = ["poetry-core"]
