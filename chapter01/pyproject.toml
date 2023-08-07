@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "architecture-pattern-with-python"
+version = "0.1.0"
+description = ""
+authors = ["DAANGN TEAM"]
+readme = "README.md"
+packages = [{include = "architecture_pattern_with_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
